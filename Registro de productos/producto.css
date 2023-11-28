@@ -1,0 +1,60 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del encabezado */
+header {
+  background-image: url("[4]");
+  background-size: cover;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #555;
+}
+
+.nav-link.active {
+  color: #007bff;
+}
+
+.btn-primary {
+  margin-left: auto;
+}
+
+main {
+  padding: 20px;
+}
+
+.card {
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin-bottom: 5px;
+}

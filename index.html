@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header> 
+    <div class="tit">
+    <h1>Cat games</h1>
+     
+<div class="registro">
+    <ul>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="Registrer.html">Registrer</a></li>
+    </ul>
+</div>
+</div>
+    <div class="menu"> 
+        <nav> 
+            <ul> 
+                <li> 
+                    <a href="#"><span class="tienda"></span>Tienda</a> 
+                    <ul>
+                        <li><a href="#">Destacados</a></li> 
+                        <li><a href="#">Listas de deseados</a></li>
+                         <li><a href="#">Noticias</a></li> 
+                        <li><a href="#">Estadísticas</a></li> 
+                    </ul>
+                </li>
+                <li> 
+                    <a href="#"><span class="biblioteca"></span>Biblioteca</a> 
+                    <ul> 
+                        <li><a href="#">Inicio</a></li> 
+                        <li><a href="#">Colecciones</a></li> 
+                        <li><a href="#">Descargas</a></li> 
+                        <li><a href="#">Música</a></li>
+                        <li><a href="#">Capturas</a></li> 
+                    </ul>
+                </li>
+                <li> 
+                    <a href="#"><span class="comunidad"></span>Comunidad</a> 
+                     <ul> 
+                        <li><a href="#">Inicio</a></li> 
+                        <li><a href="#">Discusiones</a></li> 
+                        <li><a href="#">Talleres</a></li> 
+                        <li><a href="#">Mercado</a></li> 
+                        <li><a href="#">Retransmisiones</a></li> 
+                    </ul>
+                </li>
+                <li> 
+                    <a href="#"><span class="Acerca de"></span>Acerca de</a> 
+                </li>
+                <li> 
+                    <a href="#"><span class="Carrito"></span>Carrito</a> 
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+</header>
+
+    <div class="container">
+      <div class="cart">
+        <h2>Carrito de compras</h2>
+        <ul id="cart-list"></ul>
+        
+        <div class="section">
+          <h2>Destacados y Recomendados</h2>
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-arrow left" tabindex="0">&#9664;</div>
+              <div class="slide" id="slide-1" tabindex="0">
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/1091500/header.jpg?t=1629300959" alt="Cyberpunk 2077">
+                <div class="caption">
+                  <h3>Cyberpunk 2077</h3>
+                  <p>Un juego de rol de mundo abierto ambientado en una megalópolis obsesionada con el poder, el glamour y la modificación corporal.</p>
+                  <a href="#" class="button">Comprar ahora</a>
+                </div>
+              </div>
+              <div class="slide" id="slide-2" tabindex="0">
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/1174180/header.jpg?t=1629300959" alt="Red Dead Redemption 2">
+                <div class="caption">
+                  <h3>Red Dead Redemption 2</h3>
+                  <p>La épica historia del honor y la lealtad en los albores del siglo XX, narrada por Rockstar Games.</p>
+                  <a href="#" class="button">Comprar ahora</a>
+                </div>
+              </div>
+              <div class="slide" id="slide-3" tabindex="0">
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/292030/header.jpg?t=1629300959" alt="The Witcher 3: Wild Hunt">
+                <div class="caption">
+                  <h3>The Witcher 3: Wild Hunt</h3>
+                  <p>Un juego de rol de fantasía oscura que te sumerge en un universo lleno de aventuras, monstruos y decisiones difíciles.</p>
+                  <a href="#" class="button">Comprar ahora</a>
+                </div>
+              </div>
+              <div class="carousel-arrow right" tabindex="0">&#9654;</div>
+            </div>
+            <div class="carousel-thumbs">
+              <span class="dot active" data-target="#slide-1" tabindex="0"></span>
+              <span class="dot" data-target="#slide-2" tabindex="0"></span>
+              <span class="dot" data-target="#slide-3" tabindex="0"></span>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="section">
+          <h2>Ofertas Especiales</h2>
+          <div class="grid">
+            <div class="card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/105600/header.jpg?t=1629300959" alt="Terraria">
+              <div class="info">
+                <h4>Terraria</h4>
+                <p>Un juego de acción y aventura en el que puedes cavar, construir, explorar y luchar en un mundo generado aleatoriamente.</p>
+                <span class="price">-50%</span>
+                <span class="discount">$4.99</span>
+                <a href="#" class="button" onclick="addToCart('Terraria', 4.99)" data-price="4.99">Añadir al carrito</a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/578080/header.jpg?t=1629300959" alt="PLAYERUNKNOWN'S BATTLEGROUNDS">
+              <div class="info">
+                <h4>PLAYERUNKNOWN'S BATTLEGROUNDS</h4>
+                <p>Un juego de supervivencia multijugador en el que debes ser el último en quedar en pie en una batalla campal de 100 jugadores.</p>
+                <span class="price">-67%</span>
+                <span class="discount">$9.89</span>
+                <a href="#" class="button" onclick="addToCart('PLAYERUNKNOWN\'S BATTLEGROUNDS', 9.89)" data-price="9.89">Añadir al carrito</a>
+              </div>
+            </div>
+          <div class="card">
+            <img src="https://steamcdn-a.akamaihd.net/steam/apps/271590/header.jpg?t=1629300959" alt="Grand Theft Auto V">
+            <div class="info">
+              <h4>Grand Theft Auto V</h4>
+              <p>Un juego de acción y aventura en el que puedes explorar el vasto mundo de Los Santos y Blaine County, y disfrutar de la vida criminal.</p>
+              <span class="price">-50%</span>
+              <span class="discount">$14.99</span>
+    
+              <a href="#" class="button" onclick="addToCart('Grand Theft Auto V', 14.99)" data-price="14.99">Añadir al carrito</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://steamcdn-a.akamaihd.net/steam/apps/105600/header.jpg?t=1629300959" alt="Terraria">
+            <div class="info">
+              <h4>Terraria</h4>
+              <p>Un juego de acción y aventura en el que puedes cavar, construir, explorar y luchar en un mundo generado aleatoriamente.</p>
+              <span class="price">-50%</span>
+              <span class="discount">$4.99</span>
+            
+              <a href="#" class="button" onclick="addToCart('Terraria', 4.99)" data-price="4.99">Añadir al carrito</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://steamcdn-a.akamaihd.net/steam/apps/578080/header.jpg?t=1629300959" alt="PLAYERUNKNOWN'S BATTLEGROUNDS">
+            <div class="info">
+              <h4>PLAYERUNKNOWN'S BATTLEGROUNDS</h4>
+              <p>Un juego de supervivencia multijugador en el que debes ser el último en quedar en pie en una batalla campal de 100 jugadores.</p>
+              <span class="price">-67%</span>
+              <span class="discount">$9.89</span>
+             <a href="#" class="button" onclick="addToCart('PLAYERUNKNOWN\'S BATTLEGROUNDS', 9.89)" data-price="9.89">Añadir al carrito</a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+       <div class="carrito-container">
+    <h2>Carrito de Compras</h2>
+    <ul class="carrito-lista">
+    </ul>
+    <p>Total: <span class="total">$0.00</span></p>
+    <button onclick="realizarPago()">Pagar</button>
+    <p id="mensaje-compra"></p>
+</div>
+
+
+      <div class="container">
+        <div class="card" data-genre="aventura" data-platform="Nintendo Switch" data-price="50.99">
+            <img src="1316659.jpeg" alt="Super Mario Odyssey">
+            <h3>Super Mario Odyssey</h3>
+            <p>Un juego de plataformas y aventuras en el que Mario explora diferentes mundos con su sombrero mágico.</p>
+            <button onclick="addToCart('Super Mario Odyssey', 50.99)">Agregar al carrito</button>
+        </div>
+        <div class="card" data-genre="aventura" data-platform="Nintendo Switch" data-price="59.99">
+            <img src="1316659.jpeg" alt="The Legend of Zelda: Breath of the Wild">
+            <h3>The Legend of Zelda: Breath of the Wild</h3>
+            <p>Un juego de acción y aventura en el que Link explora un vasto mundo abierto lleno de secretos y peligros.</p>
+            <button onclick="addToCart('The Legend of Zelda: Breath of the Wild', 39.99)">Agregar al carrito</button>
+        </div>
+        <div class="card" data-genre="simulación" data-platform="Nintendo Switch" data-price="39.99">
+            <img src="1316659.jpeg" alt="Animal Crossing: New Horizons">
+            <h3>Animal Crossing: New Horizons</h3>
+            <p>Un juego de simulación y vida social en el que el jugador crea su propia isla y convive con otros animales.</p>
+            <button onclick="addToCart('Animal Crossing: New Horizons', 29.99)">Agregar al carrito</button>
+        </div>
+        <div class="card" data-genre="aventura" data-platform="Nintendo Switch" data-price="59.99">
+            <img src="1316659.jpeg" alt="Mario Kart 8 Deluxe">
+            <h3>Mario Kart 8 Deluxe</h3>
+            <p>Un juego de carreras y diversión en el que el jugador compite con otros personajes de Nintendo en pistas llenas de obstáculos y objetos.</p>
+            <button onclick="addToCart('Mario Kart 8 Deluxe', 19.99)">Agregar al carrito</button>
+        </div>
+        <div class="card" data-genre="aventura" data-platform="Nintendo Switch" data-price="59.99">
+            <img src="1316659.jpeg" alt="Mario Kart 8 Deluxe">
+            <h3>Mario Kart 8 Deluxe</h3>
+            <p>Un juego de carreras y diversión en el que el jugador compite con otros personajes de Nintendo en pistas llenas de obstáculos y objetos.</p>
+            <button onclick="addToCart('Mario Kart 8 Deluxe', 99.99)">Agregar al carrito</button>
+        </div>
+        <div class="card" data-genre="aventura" data-platform="Nintendo Switch" data-price="59.99">
+            <img src="1316659.jpeg" alt="Mario Kart 8 Deluxe">
+            <h3>Mario Kart 8 Deluxe</h3>
+            <p>Un juego de carreras y diversión en el que el jugador compite con otros personajes de Nintendo en pistas llenas de obstáculos y objetos.</p>
+            <button onclick="addToCart('Mario Kart 8 Deluxe', 79.99)">Agregar al carrito</button>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+      <script src="index.js"></script>
+</body>
+</html>
